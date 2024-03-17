@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "./Header";
 import Body from "./Body";
+import Footer from "./Footer"
 function App() {
   return (
       <div className="App">
@@ -11,12 +12,5 @@ function App() {
   );
 }
 
-function Footer() {
-  return (
-      <footer>
-        <p>Footer &copy; 2024</p>
-      </footer>
-  );
-}
 
 export default App;
