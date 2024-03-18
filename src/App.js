@@ -8,14 +8,14 @@ import SignInPage from "./SignInPage";
 
 function App() {
   return (
-      <div className="App">
-          <Router>
-              <Routes>
-                  <Route path="/" element={<SignInPage/>}/>
-                  <Route path="/profile" element={<RegisteredUserPage />} />
-              </Routes>
-          </Router>
-      </div>
+          <div>
+              <Router>
+                  <Routes>
+                      <Route path="/" element={<SignInPage/>}/>
+                      <Route path="/profile" element={<RegisteredUserPage />} />
+                  </Routes>
+              </Router>
+          </div>
 
   );
 }

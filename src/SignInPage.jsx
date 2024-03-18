@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, TextField } from '@mui/material';
+import {Button, Container, TextField} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import Header from "./Header";
 import Footer from "./Footer";
@@ -18,9 +18,7 @@ function SignInPage() {
     };
 
     return (
-        <div>
-            <Header/>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh' }}>
+        <Container maxWidth="lg">
                 <form onSubmit={handleSubmit}>
                     <TextField
                         label="Email Address"
@@ -46,9 +44,7 @@ function SignInPage() {
                         Login
                     </Button>
                 </form>
-            </div>
-            <Footer/>
-        </div>
+        </Container>
     );
 }
 
