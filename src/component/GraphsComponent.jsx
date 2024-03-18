@@ -1,9 +1,8 @@
 import { Container, Grid } from '@mui/material';
 import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
-import { DataGrid } from '@mui/x-data-grid';
-import FinancialImage from "../images/mbr-financials.png"
-import Box from "@mui/material/Box";
+
+import FinancialImage from "../images/mbr-financials.png";
+import SitesImage from "../images/mbr-sites.png";
 import React from "react";
 
 
@@ -34,7 +33,7 @@ function GraphsComponent() {
                             </Typography>
                         </Grid>
                         <Grid item>
-                            {/* Your graph component or placeholder here */}
+                            <img src={SitesImage} alt="Financial Image" style={{ width: 175, height: 200}} />
                         </Grid>
                     </Grid>
                 </Grid>
@@ -45,8 +44,22 @@ function GraphsComponent() {
                                 Assets
                             </Typography>
                         </Grid>
-                        <Grid item>
-                            {/* Your graph component or placeholder here */}
+                        <Grid item textAlign={"center"}>
+                            <Typography variant="h7" align={"center"}>   {/* Adjust variant as needed for title */}
+                                14 Machines <br/><br/>
+                            </Typography>
+                            <Typography variant="h7">
+                            4.6 / 5 <br/>
+                            Avg. Health Score<br/><br/>
+                            </Typography>
+                            <Typography variant="h7">
+                            66% <br/>
+                            Avg. Utilization<br/><br/>
+                            </Typography>
+                            <Typography variant="h7">
+                            37%<br/>
+                            Avg. Connectivity<br/><br/>
+                            </Typography>
                         </Grid>
                     </Grid>
                 </Grid>
@@ -57,8 +70,10 @@ function GraphsComponent() {
                                 Alerts & Notifications
                             </Typography>
                         </Grid>
-                        <Grid item>
-                            {/* Your graph component or placeholder here */}
+                        <Grid item textAlign={"center"}>
+                            <Typography variant="h7" color="red">   {/* Adjust variant as needed for title */}
+                                0 Notifications <br/><br/>
+                            </Typography>
                         </Grid>
                     </Grid>
                 </Grid>
