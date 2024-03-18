@@ -9,6 +9,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LanguageIcon from '@mui/icons-material/Language';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SearchIcon from '@mui/icons-material/Search';
+import LogoImage from './images/komatsu-icon.png';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
@@ -25,7 +26,7 @@ function Header() {
                 bgcolor: 'white',
             }}>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    <img src="komatsu-icon.png" alt="Logo" style={{ height: 80, marginRight: 10 }} />
+                    <img src={LogoImage} alt="Logo" style={{ height: 80, marginRight: 10 }} />
                 </Typography>
                 <Tabs
                     value={activeTab}
@@ -51,16 +52,14 @@ function Header() {
                         width: '300px',
                     }}
                 />
+
                 <Typography color="common.black"
                             variant="body2" sx={{ marginRight: 2 }}>
-                    <ListItemIcon>
-                        <LanguageIcon sx={{ marginRight: 1 }}/>Language
-                    </ListItemIcon>
+                    <LanguageIcon sx={{ marginRight: 1 }}/>Language
                 </Typography>
+
                 <Typography color="common.black" variant="body2" sx={{ marginRight: 2 }}>
-                    <ListItemIcon>
-                        <LocationOnIcon sx={{ marginRight: 1 }}/>Find a Dealer
-                    </ListItemIcon>
+                    <LocationOnIcon sx={{ marginRight: 1 }}/> Find a Dealer
                 </Typography>
                 <IconButton color="color.black">
                     <PersonIcon/>

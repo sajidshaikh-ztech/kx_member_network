@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import { Button, TextField } from '@mui/material';
+import {Button, Container, TextField} from '@mui/material';
 import Header from "./Header";
 import Footer from "./Footer";
 import Body from "./Body";
 
 function RegisteredUserPage() {
     return (
-        <div>
-            <Header/>
+       <Container>
             <Body/>
-            <Footer/>
-       </div>
+       </Container>
     );
 }
 

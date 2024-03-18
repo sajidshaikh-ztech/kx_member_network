@@ -18,8 +18,8 @@ function ProfileComponent() {
             </Grid>
             <Grid item xs={5}>
                 <Box p={2} display="flex" alignItems="center">
-                    <Typography variant="h5">
-                        <h3>Good morning, Henry</h3><br/>
+                    <Typography variant="h5" sx={{pt: 10}}>
+                        Good morning, Henry<br/>
                         Member ID: 10012938476<br/>
                         Sierra Construction Company, Inc<br/>
                         Owner

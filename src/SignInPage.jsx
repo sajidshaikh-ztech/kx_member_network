@@ -1,51 +1,62 @@
-import React, { useState } from 'react';
-import {Button, Container, TextField} from '@mui/material';
+import React from 'react';
+import { TextField, Button, Box, Typography, Container } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import Header from "./Header";
-import Footer from "./Footer";
 
-function SignInPage() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+const SignInPage = () => {
     const navigate = useNavigate();
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        // Simulate successful login (replace with your authentication logic)
-        console.log(`Email: ${email}, Password: ${password}`);
-        // Redirect to profile page (replace with actual routing logic)
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Login successful!');
+        navigate('/kx_member_network/registered-user');  // Redirect to RegisteredUserPage after successful login
 
-        navigate('/profile');
     };
 
     return (
-        <Container maxWidth="lg">
-                <form onSubmit={handleSubmit}>
+        <Container maxWidth="sm">
+            <Box
+                sx={{
+                    marginTop: 8,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                }}
+            >
+                <Typography variant="h4" gutterBottom>
+                    Sign In
+                </Typography>
+                <Box component="form" onSubmit={handleSubmit} sx={{ width: '100%', mt: 1 }}>
                     <TextField
+                        margin="normal"
+                        required
+                        fullWidth
+                        id="email"
                         label="Email Address"
-                        variant="outlined"
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                        margin="normal"
-                        fullWidth
+                        name="email"
+                        autoComplete="email"
+                        autoFocus
                     />
                     <TextField
-                        label="Password"
-                        variant="outlined"
-                        type="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
                         margin="normal"
+                        required
                         fullWidth
+                        name="password"
+                        label="Password"
+                        type="password"
+                        id="password"
+                        autoComplete="current-password"
                     />
-                    <Button variant="contained" color="primary" type="submit" fullWidth>
-                        Login
+                    <Button
+                        type="submit"
+                        fullWidth
+                        variant="contained"
+                        sx={{ mt: 3, mb: 2 }}
+                    >
+                        Sign In
                     </Button>
-                </form>
+                </Box>
+            </Box>
         </Container>
     );
-}
+};
 
 export default SignInPage;
