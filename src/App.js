@@ -9,12 +9,8 @@ import SignInPage from "./SignInPage";
 function App() {
   return (
           <div>
-              <Router>
-                  <Routes>
-                      <Route path="/" element={<SignInPage/>}/>
-                      <Route path="/profile" element={<RegisteredUserPage />} />
-                  </Routes>
-              </Router>
+              <RegisteredUserPage/>
+
           </div>
 
   );
