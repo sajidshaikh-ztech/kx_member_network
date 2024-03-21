@@ -4,7 +4,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
-import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LanguageIcon from '@mui/icons-material/Language';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -13,7 +12,6 @@ import LogoImage from './images/komatsu-icon.png';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
-import {ListItemIcon} from "@mui/material";
 function Header() {
     const [activeTab, setActiveTab] = useState(0);
     const handleTabChange = (event, newValue) => {
@@ -61,9 +59,10 @@ function Header() {
                 <Typography color="common.black" variant="body2" sx={{ marginRight: 2 }}>
                     <LocationOnIcon sx={{ marginRight: 1 }}/> Find a Dealer
                 </Typography>
-                <IconButton color="color.black">
+
+                {/*<IconButton color="color.black">
                     <PersonIcon/>
-                </IconButton>
+                </IconButton>*/}
                 <IconButton color="color.black">
                     <ShoppingCartIcon />
                 </IconButton>
