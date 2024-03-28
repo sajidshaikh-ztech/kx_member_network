@@ -33,9 +33,7 @@ function Header() {
                     aria-label="navigation tabs"
                     sx={{ flexGrow: 1 }}
                 >
-                    <Link to="/category-landing" style={{ textDecoration: 'none' }}>
-                        <Tab label="Equipment" sx={{ typography: 'h7', fontWeight: 'bold' }} />
-                    </Link>
+                    <Tab label="Equipment" sx={{ typography: 'h7', fontWeight: 'bold' }} />
                     <Tab label="Solutions" sx={{ typography: 'h7', fontWeight: 'bold' }}/>
                     <Tab label="Support & Service" sx={{ typography: 'h7', fontWeight: 'bold' }}/>
                     <Tab label="Shop" sx={{ typography: 'h7', fontWeight: 'bold' }}/>

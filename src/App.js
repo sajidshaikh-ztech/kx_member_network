@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { BrowserRouter as History, Routes, Route } from 'react-router-dom'; // Import all from react-router-dom
 
 import SignInPage from "./SignInPage";
@@ -16,8 +17,8 @@ function App() {
             <div>
                 <Header />
                 <Routes>
-                    <Route path="/" element={<CategoryLandingPage />} />
-                    <Route path="/kx_member_network" element={<CategoryLandingPage />} />
+                    <Route path="/" element={<SignInPage />} />
+                    <Route path="/kx_member_network" element={<SignInPage />} />
                     <Route path="/registered-user" element={<RegisteredUserPage />} />
                     <Route path="/guest-user" element={<GuestUserPage />} />
                     <Route path="/category-landing" element={<CategoryLandingPage />} />
