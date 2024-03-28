@@ -7,7 +7,7 @@ const SignInPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Login successful!');
-        navigate('/kx_member_network/registered-user');  // Redirect to RegisteredUserPage after successful login
+        navigate('/kx_member_network/guest-user');  // Redirect to RegisteredUserPage after successful login
 
     };
 
