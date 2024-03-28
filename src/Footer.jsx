@@ -78,7 +78,7 @@ function Footer() {
                         Company
                     </Typography>
                     <List>
-                        <ListItem>About</ListItem>
+                        <ListItem>About Us</ListItem>
                         <ListItem>Blog</ListItem>
                         <ListItem>Careers</ListItem>
                         <ListItem>Commitment to society</ListItem>
