@@ -53,7 +53,7 @@ const ProductsComponent = () => {
                     <Grid item xs={12} sm={6} md={4} key={item} >
                         <Link to={`/products-listing`}>
                             <Box p={2} display="flex" alignItems="center" justifyContent="center">
-                                <img src={images[index]} alt="Large Image" style={{ width: 200, height: 200, marginRight: 20 }} />
+                                <img src={images[index]} style={{ width: 200, height: 200, marginRight: 20 }} />
                             </Box>
                         </Link>
                         <Box p={2} display="flex" alignItems="center" justifyContent="center">

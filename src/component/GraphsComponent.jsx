@@ -21,7 +21,7 @@ function GraphsComponent() {
                             </Typography>
                         </Grid>
                         <Grid item>
-                            <img src={FinancialImage} alt="Financial Image" style={{ width: 300, height: 200}} />
+                            <img src={FinancialImage} alt="Financial" style={{ width: 300, height: 200}} />
                         </Grid>
                     </Grid>
                 </Grid>

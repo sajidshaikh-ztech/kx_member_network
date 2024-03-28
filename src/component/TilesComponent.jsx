@@ -1,5 +1,4 @@
 import { Container, Grid, Box, Typography, IconButton } from '@mui/material';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import PrecisionManufacturingOutlinedIcon from '@mui/icons-material/PrecisionManufacturingOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
