@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
 import {Button, Container} from "@mui/material";
 import Box from "@mui/material/Box";
-
+import { useNavigate } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ProductsComponent = () => {
+    const navigate = useNavigate();
     const classes = useStyles();
     const titles = ['ZT44', 'ZR77', 'ZR122', '320XPC'];
     const images = [
@@ -43,6 +44,13 @@ const ProductsComponent = () => {
     const holeDiameter = ['7 7/8 - 10 5/8 in', '13 3/4 in', '10 5/8 - 17 1/2 in', '10 5/8 - 17 1/2 in'];
     const bitLoading = ['77,000 lbs.', '77,000 lbs.', '122,000 lbs.', '150,000 lbs.'];
     const holeRange = ['5.5 - 8.5 in', '55 ft.', '65 ft.', '65 ft.'];
+
+    const handleSubmit = (e) => {
+        console.log('submitting quote');
+        e.preventDefault();
+        navigate('https://www.komatsu.com/en/request-a-quote/');  // Redirect to RegisteredUserPage after successful login
+    };
+
     return (
         <Container maxWidth="false" sx={{
             paddingBottom:'10vh',
@@ -78,9 +86,10 @@ const ProductsComponent = () => {
                         </Box>
                         <Box p={2} display="flex" alignItems="center">
                             <Button
-                                type="submit"
+                                type="button"
                                 variant="contained"
                                 sx={{ mt: 3, mb: 2 }}
+                                onClick={() => window.location.href = 'https://www.komatsu.com/en/request-a-quote/'}
                             >
                                 Request Quote
                             </Button>

@@ -33,7 +33,8 @@ function Header() {
                     aria-label="navigation tabs"
                     sx={{ flexGrow: 1 }}
                 >
-                    <Tab label="Equipment" sx={{ typography: 'h7', fontWeight: 'bold' }} />
+                    <Tab label="Machines" sx={{ typography: 'h7', fontWeight: 'bold' }} />
+                    <Tab label="Parts" sx={{ typography: 'h7', fontWeight: 'bold' }} />
                     <Tab label="Solutions" sx={{ typography: 'h7', fontWeight: 'bold' }}/>
                     <Tab label="Support & Service" sx={{ typography: 'h7', fontWeight: 'bold' }}/>
                     <Tab label="Shop" sx={{ typography: 'h7', fontWeight: 'bold' }}/>

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import all from react-router-dom
 
-import SignInPage from "./SignInPage";
+import SignInPage from "./pages/SignInPage";
 import RegisteredUserPage from "./pages/RegisteredUserPage";
 import Header from "./Header";
 import Footer from "./Footer";
