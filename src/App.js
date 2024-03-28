@@ -16,8 +16,8 @@ function App() {
             <div>
                 <Header />
                 <Routes>
-                    <Route path="/" element={<SignInPage />} />
-                    <Route path="/kx_member_network" element={<SignInPage />} />
+                    <Route path="/" element={<CategoryLandingPage />} />
+                    <Route path="/kx_member_network" element={<CategoryLandingPage />} />
                     <Route path="/registered-user" element={<RegisteredUserPage />} />
                     <Route path="/guest-user" element={<GuestUserPage />} />
                     <Route path="/category-landing" element={<CategoryLandingPage />} />
