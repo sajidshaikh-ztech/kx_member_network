@@ -1,0 +1,72 @@
+import React from 'react';
+import { makeStyles } from '@mui/styles';
+import Typography from "@mui/material/Typography"
+import Grid from '@mui/material/Grid';
+import { Link } from 'react-router-dom';
+import {Container} from "@mui/material";
+import Box from "@mui/material/Box";
+
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+        padding: 2,
+    },
+    title: {
+        fontWeight: 'bold',
+        marginBottom: 2,
+    },
+    card: {
+        display: 'flex',
+        marginBottom: 2,
+    },
+    cardMedia: {
+        width: 200,
+        height: 200,
+        objectFit: 'cover',
+    },
+    cardContent: {
+        flex: 1,
+        padding: 2,
+    },
+}));
+
+const ProductsComponent = () => {
+    const classes = useStyles();
+    const titles = ['ZT44', 'ZR77', 'ZR122', '320XPC'];
+    const images = [
+        'https://komatsu.stylelabs.cloud/api/public/content/2Related_d305f48e981b4bd5909bdd3a83927a38?v=c8320406',
+        'https://komatsu.stylelabs.cloud/api/public/content/Related_2bb302c4c7a941f480b2a345cfd373b0?v=003558bd',
+        'https://komatsu.stylelabs.cloud/api/public/content/Related_010d9b6931ed443782a97fe7ad04a277?v=dfde7a2e',
+        'https://komatsu.stylelabs.cloud/api/public/content/Related_3e999bcd65ac43129a0b4c1c37cab32a?v=375d749a'
+    ];
+    const holeDiameter = ['7 7/8 - 10 5/8 in', '13 3/4 in', '10 5/8 - 17 1/2 in', '10 5/8 - 17 1/2 in'];
+    const bitLoading = ['77,000 lbs.', '77,000 lbs.', '122,000 lbs.', '150,000 lbs.'];
+    const holeRange = ['5.5 - 8.5 in', '55 ft.', '65 ft.', '65 ft.'];
+    return (
+        <Container maxWidth="false" sx={{
+            paddingBottom:'10vh',
+        }}>
+
+            <Grid container spacing={2} >
+                {titles.map((item, index) => (
+                    <Grid item xs={12} sm={6} md={4} key={item} >
+                        <Link to={`/products-listing`}>
+                            <Box p={2} display="flex" alignItems="center" justifyContent="center">
+                                <img src={images[index]} alt="Large Image" style={{ width: 200, height: 200, marginRight: 20 }} />
+                            </Box>
+                        </Link>
+                        <Box p={2} display="flex" alignItems="center" justifyContent="center">
+                            <Typography variant="h6" align="center" >
+                                   {item}
+                            </Typography>
+                        </Box>
+
+                    </Grid>
+                ))}
+            </Grid>
+        </Container>
+    );
+};
+
+export default ProductsComponent;
