@@ -3,7 +3,7 @@ import { makeStyles } from '@mui/styles';
 import Typography from "@mui/material/Typography"
 import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
-import {Container} from "@mui/material";
+import {Button, Container} from "@mui/material";
 import Box from "@mui/material/Box";
 
 
@@ -56,10 +56,34 @@ const ProductsComponent = () => {
                                 <img src={images[index]} style={{ width: 200, height: 200, marginRight: 20 }} />
                             </Box>
                         </Link>
-                        <Box p={2} display="flex" alignItems="center" justifyContent="center">
+                        <Box p={2} display="flex" alignItems="center">
                             <Typography variant="h6" align="center" >
                                    {item}
                             </Typography>
+                        </Box>
+                        <Box p={2} display="flex" alignItems="center">
+                            <Typography variant="h7" align="center" >
+                                Hole Diameter {holeDiameter[index]}
+                            </Typography>
+                        </Box>
+                        <Box p={2} display="flex" alignItems="center">
+                            <Typography variant="h7" align="center" >
+                                Bit Loading {bitLoading[index]}
+                            </Typography>
+                        </Box>
+                        <Box p={2} display="flex" alignItems="center">
+                            <Typography variant="h7" align="center" >
+                                Single pass hole depth {holeRange[index]}
+                            </Typography>
+                        </Box>
+                        <Box p={2} display="flex" alignItems="center">
+                            <Button
+                                type="submit"
+                                variant="contained"
+                                sx={{ mt: 3, mb: 2 }}
+                            >
+                                Request Quote
+                            </Button>
                         </Box>
 
                     </Grid>

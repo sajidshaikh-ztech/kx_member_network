@@ -11,6 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import LogoImage from './images/komatsu-icon.png';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 function Header() {
     const [activeTab, setActiveTab] = useState(0);
@@ -32,7 +33,9 @@ function Header() {
                     aria-label="navigation tabs"
                     sx={{ flexGrow: 1 }}
                 >
-                    <Tab label="Equipment" sx={{ typography: 'h7', fontWeight: 'bold' }} />
+                    <Link to="/category-landing" style={{ textDecoration: 'none' }}>
+                        <Tab label="Equipment" sx={{ typography: 'h7', fontWeight: 'bold' }} />
+                    </Link>
                     <Tab label="Solutions" sx={{ typography: 'h7', fontWeight: 'bold' }}/>
                     <Tab label="Support & Service" sx={{ typography: 'h7', fontWeight: 'bold' }}/>
                     <Tab label="Shop" sx={{ typography: 'h7', fontWeight: 'bold' }}/>
