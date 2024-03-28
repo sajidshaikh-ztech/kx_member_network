@@ -29,7 +29,7 @@ function GraphsComponent() {
                     <Grid container direction="column" spacing={2}>  {/* Nested grid for rows */}
                         <Grid item>
                             <Typography variant="h6" align={"center"}>  {/* Adjust variant as needed for title */}
-                                Sites
+                                New Sites
                             </Typography>
                         </Grid>
                         <Grid item>
