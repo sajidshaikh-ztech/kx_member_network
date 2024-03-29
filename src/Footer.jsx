@@ -1,6 +1,7 @@
 import {Container, Grid, List, ListItem, Typography} from "@mui/material";
 
 import React from "react";
+import {Link} from "react-router-dom";
 
 
 function Footer() {
@@ -13,49 +14,49 @@ function Footer() {
                     </Typography>
                     <List>
                         <ListItem>
-                        <a href="http://www.modularmining.com" target="_blank" rel="noreferrer">
-                            Modular Mining
-                        </a>
+                            <Link to="http://www.modularmining.com/" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                                Modular Mining
+                            </Link>
                         </ListItem>
                         <ListItem>
-                        <a href="http://www.ivolve.com" target="_blank" rel="noreferrer">
-                            Ivolve
-                        </a>
+                            <Link to="http://www.ivolve.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                                Ivolve
+                            </Link>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.montabert.com" target="_blank" rel="noreferrer">
+                            <Link to="http://www.montabert.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
                             Montabert
-                        </a>
+                            </Link>
                         </ListItem>
                         <ListItem>
-                        <a href="http://www.komatsuforklift.com" target="_blank" rel="noreferrer">
-                            Komatsu Forklifts
-                        </a>
+                            <Link to="http://www.komatsuforklift.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                                Komatsu Forklifts
+                            </Link>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.komatsufinancial.com" target="_blank"  rel="noreferrer">
-                            Komatsu Financial
-                        </a>
+                            <Link to="http://www.komatsufinancial.com" target="_blank"  rel="noreferrer" style={{ textDecoration: 'none' }}>
+                                Komatsu Financial
+                            </Link>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.quadco.com" target="_blank"  rel="noreferrer">
+                            <Link to="http://www.quadco.com" target="_blank"  rel="noreferrer" style={{ textDecoration: 'none' }}>
                             Quadco
-                        </a>
+                            </Link>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.hensely.com" target="_blank"  rel="noreferrer">
+                            <Link to="http://www.hensely.com" target="_blank"  rel="noreferrer" style={{ textDecoration: 'none' }}>
                             Hensely
-                        </a>
+                            </Link>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.timberpro.com" target="_blank"  rel="noreferrer">
+                            <Link to="http://www.timberpro.com" target="_blank"  rel="noreferrer" style={{ textDecoration: 'none' }}>
                             Timberpro
-                        </a>
+                            </Link>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.americanbatterysolutions.com" target="_blank"  rel="noreferrer">
+                            <Link to="http://www.americanbatterysolutions.com" target="_blank"  rel="noreferrer" style={{ textDecoration: 'none' }}>
                             American Battery Solutions
-                        </a>
+                            </Link>
                         </ListItem>
                     </List>
                 </Grid>
