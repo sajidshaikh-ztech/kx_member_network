@@ -82,6 +82,8 @@ const SolutionsComponent = () => {
                    <Grid item xs={12}>  {/* Row 3 - full width on xs */}
                        <Box p={1} display="flex" >
                            <div><b>Key Features</b></div>
+                       </Box>
+                       <Box p={1} display="flex" >
                            <div>
                                <ul>
                                    <li>
@@ -97,7 +99,129 @@ const SolutionsComponent = () => {
                            </div>
                        </Box>
                    </Grid>
+                   <Grid item xs={12}>
+                       <Box p={1} display="flex" >
+                           <Button
+                               type="button"
+                               variant="contained"
+                               sx={{ mt: 3, mb: 2 }}
+                               onClick={() => window.location.href = 'https://smartconstruction.mykomatsu.komatsu/Products/Detail/1efc18b7-a0f7-4076-89d2-8271743374f2'}
+                           >
+                               Buy Now
+                           </Button>
+                       </Box>
+                   </Grid>
                </Grid>
+            </Grid>
+            <Grid container spacing={2} >
+                <Grid item xs={6}>  {/* 40% width for the first section */}
+                    <Box p={2} display="flex" alignItems="center">
+                        <img src="https://kacscmpeusprdsacdn.azureedge.net/images/Dashboard/637716696028254115_smartconstruction_dashboard_cutandfill.png" style={{ width: 800, height: 275}} />
+                    </Box>
+                </Grid>
+                <Grid item xs={6} sx={{ pl: 20 }}>  {/* Right grid with nested container for rows */}
+                    <Grid item xs={12} >  {/* Row 1 - full width on xs */}
+                        <Box p={2} display="flex" alignItems="center">
+                            <Typography variant="h5" align="center" >
+                                Dashboard
+                            </Typography>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12}>  {/* Row 2 - full width on xs */}
+                        <Box p={2} display="flex" alignItems="left">
+                            <Typography >
+                                Graphically visualize your design, drone, and machine data to measure cut/fills, quantities, and productivity of your job site.
+                            </Typography>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12}>  {/* Row 3 - full width on xs */}
+                        <Box p={1} display="flex" >
+                            <div><b>Key Features</b></div>
+                        </Box>
+                        <Box p={1} display="flex" >
+                            <div>
+                                <ul>
+                                    <li>
+                                        Visually track productivity, materials
+                                    </li>
+                                    <li>
+                                        Measure and make decisions quickly
+                                    </li>
+                                    <li>
+                                        Confirm quantities moved
+                                    </li>
+                                </ul>
+                            </div>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Box p={1} display="flex" >
+                            <Button
+                                type="button"
+                                variant="contained"
+                                sx={{ mt: 3, mb: 2 }}
+                                onClick={() => window.location.href = 'https://smartconstruction.mykomatsu.komatsu/Products/Detail/4afd51ec-8566-44b9-9387-2508ca04b223'}
+                            >
+                                Buy Now
+                            </Button>
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid container spacing={2} >
+                <Grid item xs={6}>  {/* 40% width for the first section */}
+                    <Box p={2} display="flex" alignItems="center">
+                        <img src="https://kacscmpeusprdsacdn.azureedge.net/images/Field/637716697307843761_discoverproductmain.png" style={{ width: 510, height: 275}} />
+                    </Box>
+                </Grid>
+                <Grid item xs={6} sx={{ pl: 20 }}>  {/* Right grid with nested container for rows */}
+                    <Grid item xs={12} >  {/* Row 1 - full width on xs */}
+                        <Box p={2} display="flex" alignItems="center">
+                            <Typography variant="h5" align="center" >
+                                Field
+                            </Typography>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12}>  {/* Row 2 - full width on xs */}
+                        <Box p={2} display="flex" alignItems="left">
+                            <Typography >
+                                Use a mobile app to record jobsite activity and analyze your operational costs and efficiencies in near real time.
+                            </Typography>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12}>  {/* Row 3 - full width on xs */}
+                        <Box p={1} display="flex" >
+                            <div><b>Key Features</b></div>
+                        </Box>
+                        <Box p={1} display="flex" >
+                            <div>
+                                <ul>
+                                    <li>
+                                        Manage site activity, task, and costs
+                                    </li>
+                                    <li>
+                                        Visualize health of the project
+                                    </li>
+                                    <li>
+                                        Daily reporting eliminates challenging paperwork
+                                    </li>
+                                </ul>
+                            </div>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Box p={1} display="flex" >
+                            <Button
+                                type="button"
+                                variant="contained"
+                                sx={{ mt: 3, mb: 2 }}
+                                onClick={() => window.location.href = 'https://smartconstruction.mykomatsu.komatsu/Products/Detail/cb91968d-9577-475f-bce7-3a90d8611b8e'}
+                            >
+                                Buy Now
+                            </Button>
+                        </Box>
+                    </Grid>
+                </Grid>
             </Grid>
         </Container>
     );

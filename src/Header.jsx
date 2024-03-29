@@ -11,7 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import LogoImage from './images/komatsu-icon.png';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import { history } from 'react-router-dom';
+import {history, Link} from 'react-router-dom';
 import {useNavigate} from 'react-router-dom'; // Import Link for navigation
 
 
@@ -39,7 +39,7 @@ function Header() {
                 bgcolor: 'white',
             }}>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    <img src={LogoImage} alt="Logo" style={{ height: 80, marginRight: 10 }} />
+                   <Link to={'/kx_member_network'}><img src={LogoImage} alt="Logo" style={{ height: 80, marginRight: 10 }} /></Link>
                 </Typography>
                 <Tabs
                     value={activeTab}

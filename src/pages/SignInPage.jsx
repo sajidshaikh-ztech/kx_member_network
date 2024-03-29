@@ -1,13 +1,19 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { TextField, Button, Box, Typography, Container } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 const SignInPage = () => {
     const navigate = useNavigate();
+    const [email, setEmail] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Login successful!');
-        navigate('/guest-user');  // Redirect to RegisteredUserPage after successful login
+        if (email.toLowerCase() === 'guest') {
+            navigate('/kx_member_network/guest-user');
+        } else  {
+            navigate('/kx_member_network/registered-user');// Redirect to RegisteredUserPage after successful login
+        }
+
     };
 
     return (
@@ -33,6 +39,8 @@ const SignInPage = () => {
                         name="email"
                         autoComplete="email"
                         autoFocus
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
                     />
                     <TextField
                         margin="normal"

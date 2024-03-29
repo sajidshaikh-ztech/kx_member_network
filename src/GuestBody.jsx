@@ -11,7 +11,7 @@ function GuestBody() {
         <Container maxWidth="lg">  {/* Adjust maxWidth as needed */}
             <Grid container spacing={2}>  {/* Adjust spacing as needed */}
                 <Grid item xs={12}>
-                    <ProfileComponent/>
+                    <ProfileComponent user={'guest'}/>
                 </Grid>
                 <Grid item xs={12}>
                     <Box sx={{ mb: 4 }}> {/* Add spacing at the bottom */}
