@@ -1,11 +1,11 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import BackgroundImage from './images/mbr_backgroud.jpeg';
+
 import ProfileComponent from "./component/ProfileComponent";
-import GraphsComponent from "./component/GraphsComponent";
+
 import {Container, Grid, IconButton, Typography} from "@mui/material";
-import TilesComponent from "./component/TilesComponent";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 function GuestBody() {
     return (
         <Container maxWidth="lg">  {/* Adjust maxWidth as needed */}

@@ -11,7 +11,7 @@ function ProfileComponent({ user }) {
         <Grid container spacing={2}>
             <Grid item xs={3}>  {/* 40% width for the first section */}
                 <Box p={2} display="flex" alignItems="center">
-                    <img src={GenericImage} style={{ width: 200, height: 200, marginRight: 20 }} />
+                    <img alt="Personal" src={GenericImage} style={{ width: 200, height: 200, marginRight: 20 }} />
                 </Box>
             </Grid>
             <Grid item xs={5}>

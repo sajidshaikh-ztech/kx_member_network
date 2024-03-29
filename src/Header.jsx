@@ -11,7 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import LogoImage from './images/komatsu-icon.png';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import {history, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {useNavigate} from 'react-router-dom'; // Import Link for navigation
 
 
