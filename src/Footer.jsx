@@ -1,9 +1,7 @@
-
-import {Container, Grid, Typography} from "@mui/material";
+import {Container, Grid, List, ListItem, Typography} from "@mui/material";
 
 import React from "react";
-import { List, ListItem } from '@mui/material';
-import { Link } from 'react-router-dom';
+
 
 function Footer() {
     return (
@@ -16,7 +14,7 @@ function Footer() {
                     <List>
                         <ListItem>
                         <a href="http://www.modularmining.com" target="_blank" rel="noreferrer">
-                            Modular Alarming
+                            Modular Mining
                         </a>
                         </ListItem>
                         <ListItem>
@@ -35,27 +33,27 @@ function Footer() {
                         </a>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.komatsufinancial.com" target="_blank" underline="none" rel="noreferrer">
+                        <a color="inherit" href="http://www.komatsufinancial.com" target="_blank"  rel="noreferrer">
                             Komatsu Financial
                         </a>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.quadco.com" target="_blank" underline="none" rel="noreferrer">
+                        <a color="inherit" href="http://www.quadco.com" target="_blank"  rel="noreferrer">
                             Quadco
                         </a>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.hensely.com" target="_blank" underline="none" rel="noreferrer">
+                        <a color="inherit" href="http://www.hensely.com" target="_blank"  rel="noreferrer">
                             Hensely
                         </a>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.timberpro.com" target="_blank" underline="none" rel="noreferrer">
+                        <a color="inherit" href="http://www.timberpro.com" target="_blank"  rel="noreferrer">
                             Timberpro
                         </a>
                         </ListItem>
                         <ListItem>
-                        <a color="inherit" href="http://www.americanbatterysolutions.com" target="_blank" underline="none" rel="noreferrer">
+                        <a color="inherit" href="http://www.americanbatterysolutions.com" target="_blank"  rel="noreferrer">
                             American Battery Solutions
                         </a>
                         </ListItem>

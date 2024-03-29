@@ -1,12 +1,12 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 
-import ProfileComponent from "./component/ProfileComponent";
+import ProfileComponent from "./ProfileComponent";
 
 import {Container, Grid, IconButton, Typography} from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
-function GuestBody() {
+function GuestBodyComponent() {
     return (
         <Container maxWidth="lg">  {/* Adjust maxWidth as needed */}
             <Grid container spacing={2}>  {/* Adjust spacing as needed */}
@@ -47,4 +47,4 @@ function GuestBody() {
     );
 }
 
-export default GuestBody;
+export default GuestBodyComponent;

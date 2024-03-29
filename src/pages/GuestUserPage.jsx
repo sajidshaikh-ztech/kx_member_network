@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Container} from '@mui/material';
 
-import GuestBody from "../GuestBody";
+import GuestBodyComponent from "../component/GuestBodyComponent";
 
 function GuestUserPage() {
     return (
        <Container>
-            <GuestBody/>
+            <GuestBodyComponent/>
        </Container>
     );
 }
