@@ -11,12 +11,26 @@ import SearchIcon from '@mui/icons-material/Search';
 import LogoImage from './images/komatsu-icon.png';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { history } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom'; // Import Link for navigation
+
 
 function Header() {
     const [activeTab, setActiveTab] = useState(0);
+    const navigate = useNavigate();
     const handleTabChange = (event, newValue) => {
+        console.log('NewValue---- ' + newValue);
+        if (newValue === 0) {
+            //navigate('/category-landing');
+        } else if (newValue === 1) {
+            //navigate('/products-listing');
+        }
         setActiveTab(newValue);
+    };
+
+    const handleOnClick = (tab) => {
+        console.log('Here---- ' + tab.label);
+        navigate('/kx_member_network/'+tab.label);
     };
 
     return (
@@ -33,11 +47,12 @@ function Header() {
                     aria-label="navigation tabs"
                     sx={{ flexGrow: 1 }}
                 >
-                    <Tab label="Machines" sx={{ typography: 'h7', fontWeight: 'bold' }} />
-                    <Tab label="Parts" sx={{ typography: 'h7', fontWeight: 'bold' }} />
-                    <Tab label="Solutions" sx={{ typography: 'h7', fontWeight: 'bold' }}/>
-                    <Tab label="Support & Service" sx={{ typography: 'h7', fontWeight: 'bold' }}/>
-                    <Tab label="Shop" sx={{ typography: 'h7', fontWeight: 'bold' }}/>
+
+                    <Tab label="Machines" sx={{ typography: 'h7', fontWeight: 'bold' }} onClick={() => handleOnClick({ label: "category-landing/machines" })}/>
+                    <Tab label="Parts" sx={{ typography: 'h7', fontWeight: 'bold' }} onClick={() => handleOnClick({ label: "category-landing/parts" })}/>
+                    <Tab label="Solutions" sx={{ typography: 'h7', fontWeight: 'bold' }} onClick={() => handleOnClick({ label: "solutions-listing" })}/>
+                    <Tab label="Support & Service" sx={{ typography: 'h7', fontWeight: 'bold' }} />
+                    <Tab label="Shop" sx={{ typography: 'h7', fontWeight: 'bold' }} />
                 </Tabs>
                 <InputBase
                     placeholder="Search"

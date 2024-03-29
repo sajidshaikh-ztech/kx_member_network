@@ -8,7 +8,6 @@ const SignInPage = () => {
         e.preventDefault();
         console.log('Login successful!');
         navigate('/guest-user');  // Redirect to RegisteredUserPage after successful login
-
     };
 
     return (

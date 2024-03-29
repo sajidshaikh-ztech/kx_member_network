@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import {Button, Container, TextField} from '@mui/material';
+import { Container } from '@mui/material';
 import CategoryComponent from "../component/CategoryComponent";
+import { useParams } from 'react-router-dom';
 
 function CategoryLandingPage() {
+    const { category } = useParams();
     return (
         <Container>
-            <CategoryComponent/>
+            <CategoryComponent category={category}/>
         </Container>
     );
 }
