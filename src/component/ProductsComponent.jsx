@@ -1,39 +1,12 @@
 import React from 'react';
-import { makeStyles } from '@mui/styles';
 import Typography from "@mui/material/Typography"
 import Grid from '@mui/material/Grid';
-import { Link } from 'react-router-dom';
 import {Button, Container} from "@mui/material";
 import Box from "@mui/material/Box";
 import { useNavigate } from 'react-router-dom';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-        padding: 2,
-    },
-    title: {
-        fontWeight: 'bold',
-        marginBottom: 2,
-    },
-    card: {
-        display: 'flex',
-        marginBottom: 2,
-    },
-    cardMedia: {
-        width: 200,
-        height: 200,
-        objectFit: 'cover',
-    },
-    cardContent: {
-        flex: 1,
-        padding: 2,
-    },
-}));
 
 const ProductsComponent = () => {
-    const navigate = useNavigate();
-    const classes = useStyles();
     const titles = ['ZT44', 'ZR77', 'ZR122', '320XPC'];
     const images = [
         'https://komatsu.stylelabs.cloud/api/public/content/2Related_d305f48e981b4bd5909bdd3a83927a38?v=c8320406',
@@ -45,11 +18,6 @@ const ProductsComponent = () => {
     const bitLoading = ['77,000 lbs.', '77,000 lbs.', '122,000 lbs.', '150,000 lbs.'];
     const holeRange = ['5.5 - 8.5 in', '55 ft.', '65 ft.', '65 ft.'];
 
-    const handleSubmit = (e) => {
-        console.log('submitting quote');
-        e.preventDefault();
-        navigate('https://www.komatsu.com/en/request-a-quote/');  // Redirect to RegisteredUserPage after successful login
-    };
 
     return (
         <Container maxWidth="false" sx={{
@@ -89,7 +57,7 @@ const ProductsComponent = () => {
                                 type="button"
                                 variant="contained"
                                 sx={{ mt: 3, mb: 2 }}
-                                onClick={() => window.location.href = 'https://www.komatsu.com/en/request-a-quote/'}
+                                onClick={() => window.open('https://www.komatsu.com/en/request-a-quote/', '_blank')}
                             >
                                 Request Quote
                             </Button>

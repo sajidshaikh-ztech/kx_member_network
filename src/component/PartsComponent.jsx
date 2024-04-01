@@ -33,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
 
 const PartsComponent = () => {
     const navigate = useNavigate();
-    const classes = useStyles();
     const name = ['Filter, Cabin Air Element', 'Cabin Air Filter', 'Air Filter', 'Cabin Air Filter Accessory',
                             'Water Pump Assembly','Starter, Gear Reduction type, 24 Volts 5.5 KW'];
     const images = [
@@ -46,11 +45,6 @@ const PartsComponent = () => {
     ];
     const partNumber = ['00840205','145-Z79-5810','14X-911-7750', '22B-979-1730','R600-821-9390','R600-863-5131'];
 
-    const handleSubmit = (e) => {
-        console.log('submitting quote');
-        e.preventDefault();
-        navigate('https://www.komatsu.com/en/request-a-quote/');  // Redirect to RegisteredUserPage after successful login
-    };
 
     return (
         <Container maxWidth="false" sx={{
@@ -79,7 +73,7 @@ const PartsComponent = () => {
                             type="button"
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
-                            onClick={() => window.location.href = 'https://mykomatsu.komatsu/'}
+                            onClick={() => window.open('https://mykomatsu.komatsu/', '_blank')}
                         >
                             Buy Now
                         </Button>

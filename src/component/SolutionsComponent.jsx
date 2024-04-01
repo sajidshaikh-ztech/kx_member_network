@@ -56,7 +56,7 @@ const SolutionsComponent = () => {
                                type="button"
                                variant="contained"
                                sx={{ mt: 3, mb: 2 }}
-                               onClick={() => window.location.href = 'https://smartconstruction.mykomatsu.komatsu/Products/Detail/1efc18b7-a0f7-4076-89d2-8271743374f2'}
+                               onClick={() => window.open('https://smartconstruction.mykomatsu.komatsu/Products/Detail/1efc18b7-a0f7-4076-89d2-8271743374f2','_blank')}
                            >
                                Buy Now
                            </Button>
@@ -111,7 +111,8 @@ const SolutionsComponent = () => {
                                 type="button"
                                 variant="contained"
                                 sx={{ mt: 3, mb: 2 }}
-                                onClick={() => window.location.href = 'https://smartconstruction.mykomatsu.komatsu/Products/Detail/4afd51ec-8566-44b9-9387-2508ca04b223'}
+                                onClick={() =>
+                                    window.open('https://smartconstruction.mykomatsu.komatsu/Products/Detail/4afd51ec-8566-44b9-9387-2508ca04b223','_blank')}
                             >
                                 Buy Now
                             </Button>
@@ -166,7 +167,7 @@ const SolutionsComponent = () => {
                                 type="button"
                                 variant="contained"
                                 sx={{ mt: 3, mb: 2 }}
-                                onClick={() => window.location.href = 'https://smartconstruction.mykomatsu.komatsu/Products/Detail/cb91968d-9577-475f-bce7-3a90d8611b8e'}
+                                onClick={() => window.open('https://smartconstruction.mykomatsu.komatsu/Products/Detail/cb91968d-9577-475f-bce7-3a90d8611b8e','_blank')}
                             >
                                 Buy Now
                             </Button>
