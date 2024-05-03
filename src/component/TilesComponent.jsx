@@ -1,45 +1,63 @@
-import { Container, Grid, Box, Typography, IconButton } from '@mui/material';
-import ApartmentIcon from '@mui/icons-material/Apartment';
+import {Box, Container, Grid, IconButton, Typography} from '@mui/material';
 import PrecisionManufacturingOutlinedIcon from '@mui/icons-material/PrecisionManufacturingOutlined';
-import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
-import HandymanOutlinedIcon from '@mui/icons-material/HandymanOutlined';
-import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
-import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
-import CachedOutlinedIcon from '@mui/icons-material/CachedOutlined';
 import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
-import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
-import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import HelpOutlinedIcon from '@mui/icons-material/HelpOutlined';
+import AddAlertOutlinedIcon from '@mui/icons-material/AddAlertOutlined';
+import AutorenewOutlinedIcon from '@mui/icons-material/AutorenewOutlined';
+import Diversity3OutlinedIcon from '@mui/icons-material/Diversity3Outlined';
+import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
+import SummarizeOutlinedIcon from '@mui/icons-material/SummarizeOutlined';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import DocumentScannerOutlinedIcon from '@mui/icons-material/DocumentScannerOutlined';
+import MovingOutlinedIcon from '@mui/icons-material/MovingOutlined';
+import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
+import HealthAndSafetyOutlinedIcon from '@mui/icons-material/HealthAndSafetyOutlined';
+import DirectionsRunOutlinedIcon from '@mui/icons-material/DirectionsRunOutlined';
 
 function TilesComponent() {
-    const titles = ['Site Management', 'Fleet Management', 'Buy Parts', 'Schedule Service',
-                            'Academy', 'Subscription Management', 'Warranty Management', 'My Organization',
-                            'Financing', 'Parts Books', 'Rewards', 'Profile'];
+
+    const greenTiles = ['Create Account', 'My Profile', 'My Organization', 'Help Desk', 'Manage Alerts',
+                                'Application Status'];
+
+    const redTiles = ['My Community', 'Manage My Fleet', 'Manage My Site', 'My Reports', 'Shop',
+                               'Financing', 'Documents', 'New Product Sales Enablement', 'Service My Fleet',
+                                'Service & Warranty', 'Training'];
     //const icons = Array(12).fill(<PrecisionManufacturingIcon sx={{ fontSize: 40 }}/>, <ApartmentIcon sx={{ fontSize: 40 }}/>);
-    const icon = [
-        <ApartmentIcon sx={{ fontSize: 80 }}/>,
-        <PrecisionManufacturingOutlinedIcon sx={{ fontSize: 80 }}/>,
-        <SettingsOutlinedIcon sx={{ fontSize: 80 }}/>,
-        <HandymanOutlinedIcon sx={{ fontSize: 80 }}/>,
-        <SchoolOutlinedIcon sx={{ fontSize: 80 }}/>,
-        <CreditCardOutlinedIcon sx={{ fontSize: 80 }}/>,
-        <CachedOutlinedIcon sx={{ fontSize: 80 }}/>,
-        <GroupsOutlinedIcon sx={{ fontSize: 80 }}/>,
-        <DescriptionOutlinedIcon sx={{ fontSize: 80 }}/>,
-        <MenuBookOutlinedIcon sx={{ fontSize: 80 }}/>,
-        <EmojiEventsOutlinedIcon sx={{ fontSize: 80 }}/>,
-        <AccountCircleOutlinedIcon sx={{ fontSize: 80 }}/>
+    const greenIcons = [
+        <AccountCircleIcon sx={{ fontSize: 80 , color: 'white'}}/>,
+        <AccountCircleOutlinedIcon sx={{ fontSize: 80, color: 'white' }}/>,
+        <GroupsOutlinedIcon sx={{ fontSize: 80, color: 'white'  }}/>,
+        <HelpOutlinedIcon sx={{ fontSize: 80, color: 'white'  }}/>,
+        <AddAlertOutlinedIcon sx={{ fontSize: 80, color: 'white'  }}/>,
+        <AutorenewOutlinedIcon sx={{ fontSize: 80, color: 'white'  }}/>
     ];
+
+    const redIcons = [
+        <Diversity3OutlinedIcon sx={{ fontSize: 80 , color: 'white'}}/>,
+        <PrecisionManufacturingOutlinedIcon sx={{ fontSize: 80, color: 'white' }}/>,
+        <ConstructionOutlinedIcon sx={{ fontSize: 80, color: 'white'  }}/>,
+        <SummarizeOutlinedIcon sx={{ fontSize: 80, color: 'white'  }}/>,
+        <ShoppingCartOutlinedIcon sx={{ fontSize: 80, color: 'white'  }}/>,
+        <DescriptionOutlinedIcon sx={{ fontSize: 80, color: 'white' }}/>,
+        <DocumentScannerOutlinedIcon sx={{ fontSize: 80, color: 'white' }}/>,
+        <MovingOutlinedIcon sx={{ fontSize: 80, color: 'white' }}/>,
+        <EngineeringOutlinedIcon sx={{ fontSize: 80, color: 'white' }}/>,
+        <HealthAndSafetyOutlinedIcon sx={{ fontSize: 80, color: 'white' }}/>,
+        <DirectionsRunOutlinedIcon sx={{ fontSize: 80, color: 'white' }}/>
+    ];
+
     return (
         <Container maxWidth="lg">
             <Grid container spacing={2}>
-                {titles.map((title, index) => (
+                {greenTiles.map((title, index) => (
                     <Grid item xs={3} key={index}>
                         <Box sx={{
                             width: '200px',
                             height: '200px',
-                            backgroundColor: '#D3D3D3',
+                            backgroundColor: 'green',
                             color: 'primary.contrastText',
                             display: 'flex',
                             justifyContent: 'center',
@@ -47,10 +65,33 @@ function TilesComponent() {
                         }}>
                             <Grid container direction="column" spacing={2}>
                                 <Grid item textAlign={"center"}>
-                                    <IconButton>{icon[index]}</IconButton>
+                                    <IconButton>{greenIcons[index]}</IconButton>
                                 </Grid>
                                 <Grid item textAlign={"center"} fontWeight={"bold"}>
-                                    <Typography variant="h7" color={"#030C71"}>{title}</Typography>
+                                    <Typography variant="h7" color={"white"}>{title}</Typography>
+                                </Grid>
+
+                            </Grid>
+                        </Box>
+                    </Grid>
+                ))}
+                {redTiles.map((title, index) => (
+                    <Grid item xs={3} key={index}>
+                        <Box sx={{
+                            width: '200px',
+                            height: '200px',
+                            backgroundColor: 'red',
+                            color: 'primary.contrastText',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}>
+                            <Grid container direction="column" spacing={2}>
+                                <Grid item textAlign={"center"}>
+                                    <IconButton>{redIcons[index]}</IconButton>
+                                </Grid>
+                                <Grid item textAlign={"center"} fontWeight={"bold"}>
+                                    <Typography variant="h7" color={"white"}>{title}</Typography>
                                 </Grid>
 
                             </Grid>
