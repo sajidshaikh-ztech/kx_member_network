@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kx_member_network/static/css/main.e6c13ad2.css",
-    "main.js": "/kx_member_network/static/js/main.8df335e1.js",
+    "main.js": "/kx_member_network/static/js/main.0d1a934f.js",
     "static/js/453.ede7742a.chunk.js": "/kx_member_network/static/js/453.ede7742a.chunk.js",
     "static/media/generic-person.png": "/kx_member_network/static/media/generic-person.f985f33305249df0d8a4.png",
     "static/media/mbr-sites.png": "/kx_member_network/static/media/mbr-sites.f0c95fa408c994ce9d26.png",
@@ -10,11 +10,11 @@
     "static/media/komatsu-icon.png": "/kx_member_network/static/media/komatsu-icon.740d777d8a0c3b2ca04d.png",
     "index.html": "/kx_member_network/index.html",
     "main.e6c13ad2.css.map": "/kx_member_network/static/css/main.e6c13ad2.css.map",
-    "main.8df335e1.js.map": "/kx_member_network/static/js/main.8df335e1.js.map",
+    "main.0d1a934f.js.map": "/kx_member_network/static/js/main.0d1a934f.js.map",
     "453.ede7742a.chunk.js.map": "/kx_member_network/static/js/453.ede7742a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.8df335e1.js"
+    "static/js/main.0d1a934f.js"
   ]
 }
